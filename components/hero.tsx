@@ -343,27 +343,25 @@ export function Hero() {
           New: Context-Aware CLI History
           </Badge>
 
-       <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 leading-tight text-center">
-  {/* Line 1 - Main Heading */}
-  <div className="flex flex-col sm:flex-row items-center justify-center gap-2">
-    <span>Master Your Terminal</span>
-    <span className="inline-flex items-center justify-center">
-      History
-      <img 
-        src="https://img.icons8.com/?size=100&id=rKqQiYPTkVLU&format=png&color=000000"
-        alt="cursor"
-        className="ml-2 w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 animate-pulse filter invert"
-      />
-    </span>
+      <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 leading-tight text-center">
+  {/* Line 1 - Split text to control breaks */}
+  <div>
+    Master Your Terminal
+  </div>
+  <div className="inline-flex items-center justify-center">
+    History
+    <img 
+      src="https://img.icons8.com/?size=100&id=rKqQiYPTkVLU&format=png&color=000000"
+      alt="cursor"
+      className="ml-2 w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 animate-pulse filter invert"
+    />
   </div>
 
-  {/* Line 2 - Subheading */}
+  {/* Line 2 - Orange text */}
   <div className="mt-6 text-orange-500">
     Securely, Seamlessly, Everywhere
   </div>
 </h1>
-
-
 
 
 
