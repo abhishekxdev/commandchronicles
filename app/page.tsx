@@ -6,7 +6,7 @@ import { Footer } from "@/components/footer"
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-black relative overflow-hidden">
+    <div className="min-h-screen relative overflow-hidden" style={{ backgroundColor: '#272724' }}>
       {/* Grid overlay that only covers hero section */}
       <div className="grid-overlay"></div>
       <Header />
