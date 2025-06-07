@@ -1,5 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
+  trailingSlash: true,
+  images: {
+    unoptimized: true,
+  },
   experimental: {
     optimizePackageImports: ['lucide-react'],
   },
@@ -8,10 +13,6 @@ const nextConfig = {
   },
   typescript: {
     ignoreBuildErrors: true,
-  },
-  images: {
-    domains: [],
-    unoptimized: true,
   },
   async headers() {
     return [
