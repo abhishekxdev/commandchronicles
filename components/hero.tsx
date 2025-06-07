@@ -343,22 +343,21 @@ export function Hero() {
           New: Context-Aware CLI History
           </Badge>
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight text-center">
-  <div className="flex items-center justify-center">
-    <span>Master Your Terminal History</span>
+         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 leading-tight text-center">
+  <span className="block">
+    Master Your Terminal History
     <img 
       src="https://img.icons8.com/?size=100&id=rKqQiYPTkVLU&format=png&color=000000"
       alt="cursor"
-      className="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 animate-pulse filter invert ml-2"
+      className="inline-block w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 animate-pulse filter invert ml-2"
     />
-  </div>
-  
-  <div className="mt-2">
-    <span className="text-orange-500">Securely</span>, 
-    <span className="text-orange-500"> Seamlessly</span>, 
-    <span className="text-orange-500"> Everywhere</span>
-  </div>
+  </span>
+
+  <span className="block mt-4 text-orange-500">
+    Securely, Seamlessly, Everywhere
+  </span>
 </h1>
+
 
 
 
