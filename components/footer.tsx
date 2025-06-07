@@ -41,7 +41,7 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Second Company Column */}
+          {/* Second Company Column with About, Pricing, Blog */}
           <div>
             <div className="space-y-4 mt-10">
               <a href="#" className="block text-gray-400 hover:text-white transition-colors text-sm">
@@ -58,8 +58,11 @@ export function Footer() {
               </a>
             </div>
             
-            {/* We're hiring button */}
-            <div className="mt-6">
+            {/* Contact us section with We're hiring button */}
+            <div className="mt-8">
+              <a href="#" className="block text-gray-400 hover:text-white transition-colors text-sm mb-4">
+                Contact us
+              </a>
               <button className="inline-flex items-center gap-2 px-4 py-2 bg-orange-500 hover:bg-orange-600 text-white text-sm font-medium rounded-md transition-colors">
                 <span>🔥</span>
                 We're hiring!
