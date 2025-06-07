@@ -343,15 +343,17 @@ export function Hero() {
           New: Context-Aware CLI History
           </Badge>
 
-      <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 leading-tight text-center">
+     <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 leading-tight text-center">
   {/* Line 1 - Master Your Terminal History with cursor */}
-  <div className="inline-flex items-center justify-center">
-    Master Your Terminal History
-    <img 
-      src="https://img.icons8.com/?size=100&id=rKqQiYPTkVLU&format=png&color=000000"
+  <div className="inline-flex items-center justify-center gap-2">
+    <span>Master Your Terminal History</span>
+    <svg 
+      className="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 animate-pulse fill-white" 
+      viewBox="0 0 24 24"
       alt="cursor"
-      className="ml-2 w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 animate-pulse filter invert"
-    />
+    >
+      <path d="M13.64,21.97C13.14,22.21 12.54,22 12.31,21.5L10.13,16.76L7.62,18.78C7.45,18.92 7.24,19 7,19A1,1 0 0,1 6,18V3A1,1 0 0,1 7,2C7.24,2 7.47,2.09 7.64,2.23L7.65,2.22L19.14,11.86C19.57,12.22 19.62,12.85 19.27,13.27C19.12,13.45 18.91,13.57 18.7,13.61L15.54,14.23L17.74,18.96C18,19.46 17.76,20.05 17.26,20.28L13.64,21.97Z"/>
+    </svg>
   </div>
   {/* Line 2 - Orange text */}
   <div className="mt-6 text-orange-500">
