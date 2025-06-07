@@ -107,7 +107,7 @@ html {
   background-repeat: repeat;
 }
 
-/* Grid overlay that stops at terminal */
+/* Grid overlay that stops at terminal with blur effect */
 .grid-overlay {
   position: absolute;
   top: 0;
@@ -121,11 +121,17 @@ html {
   background-size: 12.5vw 20vh;
   pointer-events: none;
   z-index: 1;
+  /* Add blur effect to grid */
+  backdrop-filter: blur(0.5px);
+  -webkit-backdrop-filter: blur(0.5px);
 }
 
-/* Terminal blue glow effect */
+/* Terminal blue glow effect with blur */
 .terminal-glow {
   position: relative;
+  /* Add blur effect to terminal */
+  filter: blur(0.3px);
+  -webkit-filter: blur(0.3px);
 }
 
 .terminal-glow::after {
@@ -145,6 +151,17 @@ html {
   border-radius: 50%;
   filter: blur(15px);
   z-index: -1;
+}
+
+/* Badge hover effect */
+.badge-hover {
+  transition: all 0.3s ease;
+}
+
+.badge-hover:hover {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border-color: #000000 !important;
 }
 
 /* Responsive text utilities */

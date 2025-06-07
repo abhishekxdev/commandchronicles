@@ -339,7 +339,7 @@ export function Hero() {
     <section className="relative z-10 px-4 sm:px-6 py-20 sm:py-24 lg:py-32 mt-16 sm:mt-0">
       <div className="max-w-7xl mx-auto">
         <div className="text-center max-w-5xl mx-auto">
-          <Badge variant="secondary" className="mb-4 sm:mb-6 bg-orange-900 text-orange-200 border-orange-800 text-sm sm:text-base">
+          <Badge variant="secondary" className="mb-4 sm:mb-6 bg-orange-900 text-orange-200 border-orange-800 text-sm sm:text-base badge-hover">
           New: Context-Aware CLI History
           </Badge>
 
