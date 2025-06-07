@@ -69,9 +69,9 @@ function TestimonialSection() {
         Don't simply take it from us...
       </h2>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 sm:gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 sm:gap-8 justify-items-center">
         {testimonials.map((testimonial, index) => (
-          <div key={index} className="bg-[#1a1a1a] rounded-xl p-8 border border-gray-800 flex flex-col min-h-[320px] w-full max-w-[400px] mx-auto">
+          <div key={index} className="bg-[#1a1a1a] rounded-xl p-8 border border-gray-800 flex flex-col min-h-[360px] w-full min-w-[280px] max-w-[480px]">
             <div className="flex items-start mb-8">
               <img 
                 src={testimonial.avatar}
