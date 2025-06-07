@@ -102,6 +102,48 @@ html {
     linear-gradient(to right, rgba(200, 200, 200, 0.333) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(200,200,200,0.15) 1px, transparent 1px);
   background-size: 12.5vw 20vh;
+  /* Grid ends at terminal section */
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+/* Grid overlay that stops at terminal */
+.grid-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh; /* Only covers the hero section */
+  background-image:
+    linear-gradient(to right, rgba(200, 200, 200, 0.333) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(200,200,200,0.15) 1px, transparent 1px);
+  background-size: 12.5vw 20vh;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Terminal blue glow effect */
+.terminal-glow {
+  position: relative;
+}
+
+.terminal-glow::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 40px;
+  background: linear-gradient(
+    to bottom,
+    rgba(59, 130, 246, 0.4) 0%,
+    rgba(59, 130, 246, 0.2) 50%,
+    transparent 100%
+  );
+  border-radius: 50%;
+  filter: blur(15px);
+  z-index: -1;
 }
 
 /* Responsive text utilities */
