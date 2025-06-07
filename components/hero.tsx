@@ -166,9 +166,9 @@ function FeatureSection() {
           Request Demo
         </button>
       </div>
-      {/* Feature blocks */}
+      {/* Feature blocks - Alternating layout */}
       <div className="flex flex-col gap-16 sm:gap-20">
-        {/* Block 1 */}
+        {/* Block 1 - Terminal on LEFT, Text on RIGHT */}
         <div className="flex flex-col lg:flex-row items-center gap-6 sm:gap-8">
           <div className="flex-1 w-full flex justify-center order-2 lg:order-1">
             <div className="bg-background rounded-xl shadow-lg p-4 sm:p-6 max-w-md w-full">
@@ -184,8 +184,13 @@ function FeatureSection() {
             <p className="text-gray-300 text-base leading-relaxed">Keep your terminal history up-to-date and accessible, no matter where you work. CommandChronicles ensures your commands are always available, securely and privately.</p>
           </div>
         </div>
-        {/* Block 2 */}
-        <div className="flex flex-col lg:flex-row-reverse items-center gap-6 sm:gap-8">
+        
+        {/* Block 2 - Terminal on RIGHT, Text on LEFT */}
+        <div className="flex flex-col lg:flex-row items-center gap-6 sm:gap-8">
+          <div className="flex-1 w-full order-1">
+            <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">Context-Aware Search</h3>
+            <p className="text-gray-300 text-base leading-relaxed">Search your command history by project, path, or environment. Instantly locate the exact command you need, with all the details you care about.</p>
+          </div>
           <div className="flex-1 w-full flex justify-center order-2">
             <div className="bg-background rounded-xl shadow-lg p-4 sm:p-6 max-w-md w-full">
               <div className="text-orange-500 mb-4">●</div>
@@ -195,12 +200,9 @@ function FeatureSection() {
               </div>
             </div>
           </div>
-          <div className="flex-1 w-full order-1">
-            <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">Context-Aware Search</h3>
-            <p className="text-gray-300 text-base leading-relaxed">Search your command history by project, path, or environment. Instantly locate the exact command you need, with all the details you care about.</p>
-          </div>
         </div>
-        {/* Block 3 */}
+        
+        {/* Block 3 - Terminal on LEFT, Text on RIGHT */}
         <div className="flex flex-col lg:flex-row items-center gap-6 sm:gap-8">
           <div className="flex-1 w-full flex justify-center order-2 lg:order-1">
             <div className="bg-background rounded-xl shadow-lg p-4 sm:p-6 max-w-md w-full">
@@ -216,8 +218,13 @@ function FeatureSection() {
             <p className="text-gray-300 text-base leading-relaxed">Your command history is encrypted at rest and in transit. Only you have access—no compromises, ever.</p>
           </div>
         </div>
-        {/* Block 4 */}
-        <div className="flex flex-col lg:flex-row-reverse items-center gap-6 sm:gap-8">
+        
+        {/* Block 4 - Terminal on RIGHT, Text on LEFT */}
+        <div className="flex flex-col lg:flex-row items-center gap-6 sm:gap-8">
+          <div className="flex-1 w-full order-1">
+            <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">Team Collaboration</h3>
+            <p className="text-gray-300 text-base leading-relaxed">Invite teammates, share command history, and boost productivity together. CommandChronicles is built for both solo developers and teams.</p>
+          </div>
           <div className="flex-1 w-full flex justify-center order-2">
             <div className="bg-background rounded-xl shadow-lg p-4 sm:p-6 max-w-md w-full">
               <div className="text-orange-500 mb-4">●</div>
@@ -227,12 +234,9 @@ function FeatureSection() {
               </div>
             </div>
           </div>
-          <div className="flex-1 w-full order-1">
-            <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">Team Collaboration</h3>
-            <p className="text-gray-300 text-base leading-relaxed">Invite teammates, share command history, and boost productivity together. CommandChronicles is built for both solo developers and teams.</p>
-          </div>
         </div>
       </div>
+      
       {/* Feature grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mt-16 sm:mt-20">
         <div className="bg-background rounded-xl p-4 sm:p-6 border border-gray-800">
