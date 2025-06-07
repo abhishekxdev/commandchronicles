@@ -69,10 +69,11 @@ function TestimonialSection() {
         Don't simply take it from us...
       </h2>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 sm:gap-8 justify-items-center">
+      {/* Updated grid with better responsive breakpoints and spacing */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
         {testimonials.map((testimonial, index) => (
-          <div key={index} className="bg-[#1a1a1a] rounded-xl p-8 border border-gray-800 flex flex-col min-h-[360px] w-full min-w-[280px] max-w-[480px]">
-            <div className="flex items-start mb-8">
+          <div key={index} className="bg-[#1a1a1a] rounded-xl p-6 sm:p-8 border border-gray-800 flex flex-col min-h-[320px] w-full max-w-[320px] mx-auto">
+            <div className="flex items-start mb-6">
               <img 
                 src={testimonial.avatar}
                 alt={testimonial.name}
@@ -80,7 +81,7 @@ function TestimonialSection() {
               />
             </div>
             
-            <p className="text-gray-300 text-base leading-relaxed mb-8 flex-grow">
+            <p className="text-gray-300 text-base leading-relaxed mb-6 flex-grow">
               "{testimonial.quote}"
             </p>
             
