@@ -71,12 +71,12 @@ function TestimonialSection() {
       
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 sm:gap-8">
         {testimonials.map((testimonial, index) => (
-          <div key={index} className="bg-[#1a1a1a] rounded-xl p-8 border border-gray-800 flex flex-col min-h-[280px] w-full max-w-[320px] mx-auto">
+          <div key={index} className="bg-[#1a1a1a] rounded-xl p-8 border border-gray-800 flex flex-col min-h-[320px] w-full max-w-[400px] mx-auto">
             <div className="flex items-start mb-8">
               <img 
                 src={testimonial.avatar}
                 alt={testimonial.name}
-                className="w-14 h-14 rounded-full object-cover flex-shrink-0"
+                className="w-16 h-16 rounded-full object-cover flex-shrink-0"
               />
             </div>
             
