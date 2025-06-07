@@ -170,7 +170,7 @@ function TaskManagementSection() {
   return (
     <section className="relative z-10 px-4 sm:px-6 py-16 sm:py-20 max-w-7xl mx-auto">
       {/* Task Management Interface Mockup */}
-      <div className="flex justify-center mb-16 sm:mb-20">
+      <div className="flex justify-center">
         <div className="rounded-2xl bg-orange-500 p-6 sm:p-8 lg:p-10 flex items-end min-h-[320px] sm:min-h-[400px] w-full max-w-[600px] lg:max-w-[800px]">
           <div className="bg-[#2a2a2a] rounded-xl w-full h-[280px] sm:h-[340px] p-6 sm:p-8 shadow-2xl">
             {/* Header */}
@@ -268,33 +268,6 @@ function TaskManagementSection() {
               </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      {/* Three Feature Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-        <div className="bg-[#1a1a1a] rounded-xl p-6 sm:p-8 border border-gray-800 text-center">
-          <div className="text-3xl sm:text-4xl font-bold text-white mb-4">1</div>
-          <h3 className="text-xl sm:text-2xl font-bold text-white mb-4">Team Task Tracker</h3>
-          <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
-            Revamp your project management with our Team Task Tracker.
-          </p>
-        </div>
-
-        <div className="bg-[#1a1a1a] rounded-xl p-6 sm:p-8 border border-gray-800 text-center">
-          <div className="text-3xl sm:text-4xl font-bold text-white mb-4">2</div>
-          <h3 className="text-xl sm:text-2xl font-bold text-white mb-4">Task Management Hub</h3>
-          <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
-            Utilize features like real-time updates, collaborative task assignments, and comprehensive analytics.
-          </p>
-        </div>
-
-        <div className="bg-[#1a1a1a] rounded-xl p-6 sm:p-8 border border-gray-800 text-center sm:col-span-2 lg:col-span-1">
-          <div className="text-3xl sm:text-4xl font-bold text-white mb-4">3</div>
-          <h3 className="text-xl sm:text-2xl font-bold text-white mb-4">Collaboration Station</h3>
-          <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
-            Benefit from tools like instant notifications, group task sharing, and in-depth performance analysis/
-          </p>
         </div>
       </div>
     </section>
