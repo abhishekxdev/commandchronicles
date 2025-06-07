@@ -36,59 +36,58 @@ function AboutSection() {
 }
 
 function TestimonialSection() {
+  const testimonials = [
+    {
+      quote: "Easily monitor and manage the time spent on tasks and projects with NimbusFlow's intuitive time tracking. Gain insights",
+      name: "Name",
+      company: "Company",
+      avatar: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2"
+    },
+    {
+      quote: "Easily monitor and manage the time spent on tasks and projects with NimbusFlow's intuitive time tracking. Gain insights",
+      name: "Name", 
+      company: "Company",
+      avatar: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2"
+    },
+    {
+      quote: "Easily monitor and manage the time spent on tasks and projects with NimbusFlow's intuitive time tracking. Gain insights",
+      name: "Name",
+      company: "Company", 
+      avatar: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2"
+    },
+    {
+      quote: "Easily monitor and manage the time spent on tasks and projects with NimbusFlow's intuitive time tracking. Gain insights",
+      name: "Name",
+      company: "Company",
+      avatar: "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2"
+    }
+  ]
+
   return (
     <section id="testimonials" className="relative z-10 px-4 sm:px-6 py-16 sm:py-20 max-w-7xl mx-auto">
-      <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center text-white mb-4">Built by developers, trusted by teams</h2>
-      <p className="text-center text-base sm:text-lg text-gray-300 mb-12 sm:mb-16 max-w-2xl mx-auto leading-relaxed">
-        CommandChronicles empowers thousands of developers and teams to work smarter, faster, and more securely. Here's what they say:
-      </p>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12">
-        <div>
-          <div className="border border-gray-700 rounded-xl p-4 sm:p-6 mb-6 bg-background">
+      <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-12 sm:mb-16 text-center">
+        Don't simply take it from us...
+      </h2>
+      
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 sm:gap-8">
+        {testimonials.map((testimonial, index) => (
+          <div key={index} className="bg-[#1a1a1a] rounded-xl p-6 border border-gray-800">
             <div className="flex items-center mb-4">
-              <div className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center mr-4 flex-shrink-0">
-                <span className="text-lg font-semibold text-white">AB</span>
-              </div>
+              <img 
+                src={testimonial.avatar}
+                alt={testimonial.name}
+                className="w-12 h-12 rounded-full object-cover mr-4"
+              />
               <div>
-                <span className="block font-semibold text-white">Aarav Bansal</span>
-                <span className="block text-gray-400 text-sm">DevOps Engineer</span>
+                <div className="font-semibold text-white text-sm">{testimonial.name}</div>
+                <div className="text-gray-400 text-xs">{testimonial.company}</div>
               </div>
             </div>
-            <p className="text-base sm:text-lg text-gray-100 leading-relaxed">
-              "CommandChronicles has completely changed how I track and search my terminal history. The context-aware search and encrypted sync are game-changers for my workflow."
+            <p className="text-gray-300 text-sm leading-relaxed">
+              "{testimonial.quote}"
             </p>
           </div>
-        </div>
-        <div className="space-y-8 sm:space-y-12">
-          <div className="border border-gray-700 rounded-xl p-4 sm:p-6 bg-background">
-            <div className="flex items-center mb-4">
-              <div className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center mr-4 flex-shrink-0">
-                <span className="text-lg font-semibold text-white">JS</span>
-              </div>
-              <div>
-                <span className="block font-semibold text-white">Jin Soo Park</span>
-                <span className="block text-gray-400 text-sm">Full Stack Developer</span>
-              </div>
-            </div>
-            <p className="text-gray-100 leading-relaxed">
-              "I love how easy it is to sync my command history across all my machines. No more lost commands!"
-            </p>
-          </div>
-          <div className="border border-gray-700 rounded-xl p-4 sm:p-6 bg-background">
-            <div className="flex items-center mb-4">
-              <div className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center mr-4 flex-shrink-0">
-                <span className="text-lg font-semibold text-white">EM</span>
-              </div>
-              <div>
-                <span className="block font-semibold text-white">Emma Müller</span>
-                <span className="block text-gray-400 text-sm">Security Engineer</span>
-              </div>
-            </div>
-            <p className="text-gray-100 leading-relaxed">
-              "The privacy features and encryption give me peace of mind. CommandChronicles is a must-have for any serious developer."
-            </p>
-          </div>
-        </div>
+        ))}
       </div>
     </section>
   )
