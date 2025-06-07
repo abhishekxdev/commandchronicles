@@ -43,7 +43,7 @@ export function Footer() {
 
           {/* About Column with Contact us and We're hiring */}
           <div>
-            <div className="space-y-4 mt-10">
+            <div className="space-y-4">
               <a href="#" className="block text-gray-400 hover:text-white transition-colors text-sm">
                 About
               </a>
