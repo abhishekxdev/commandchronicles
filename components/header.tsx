@@ -49,9 +49,9 @@ export function Header() {
           </svg>
         </button>
       </nav>
-      {/* Mobile Menu - Full Screen Overlay */}
+      {/* Mobile Menu - Compact Dropdown */}
       {menuOpen && (
-        <div className="fixed inset-0 top-0 left-0 right-0 bottom-0 bg-[#23231f] z-[100] flex flex-col min-h-screen w-full">
+        <div className="fixed inset-x-0 top-0 bg-[#23231f] z-[100] shadow-xl border-b border-gray-700">
           {/* Header with Logo and Close Button */}
           <div className="flex items-center justify-between p-4 sm:p-6 border-b border-gray-700">
             {/* Logo in Mobile Menu */}
@@ -71,40 +71,37 @@ export function Header() {
             </button>
           </div>
           
-          {/* Navigation Links - Centered */}
-          <div className="flex flex-col items-center justify-center gap-8 flex-1 px-6">
+          {/* Navigation Links - Compact Layout */}
+          <div className="px-6 py-6 space-y-4">
             <a 
               href="#features" 
-              className="text-gray-300 hover:text-white text-2xl transition-colors font-medium" 
+              className="block text-gray-300 hover:text-white text-lg transition-colors font-medium py-2" 
               onClick={() => setMenuOpen(false)}
             >
               Features
             </a>
             <a 
               href="#pricing" 
-              className="text-gray-300 hover:text-white text-2xl transition-colors font-medium" 
+              className="block text-gray-300 hover:text-white text-lg transition-colors font-medium py-2" 
               onClick={() => setMenuOpen(false)}
             >
               Pricing
             </a>
             <a 
               href="#docs" 
-              className="text-gray-300 hover:text-white text-2xl transition-colors font-medium" 
+              className="block text-gray-300 hover:text-white text-lg transition-colors font-medium py-2" 
               onClick={() => setMenuOpen(false)}
             >
               Docs
             </a>
             <Button 
               size="lg" 
-              className="bg-black hover:bg-gray-800 text-white w-4/5 max-w-xs text-xl py-4 mt-4" 
+              className="bg-black hover:bg-gray-800 text-white w-full text-lg py-3 mt-4" 
               onClick={() => setMenuOpen(false)}
             >
               Sign In
             </Button>
           </div>
-          
-          {/* Footer Space */}
-          <div className="p-4"></div>
         </div>
       )}
     </header>
