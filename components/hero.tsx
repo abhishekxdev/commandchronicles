@@ -37,7 +37,7 @@ function AboutSection() {
 
 function TestimonialSection() {
   return (
-    <section className="relative z-10 px-4 sm:px-6 py-16 sm:py-20 max-w-7xl mx-auto">
+    <section id="testimonials" className="relative z-10 px-4 sm:px-6 py-16 sm:py-20 max-w-7xl mx-auto">
       <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center text-white mb-4">Built by developers, trusted by teams</h2>
       <p className="text-center text-base sm:text-lg text-gray-300 mb-12 sm:mb-16 max-w-2xl mx-auto leading-relaxed">
         CommandChronicles empowers thousands of developers and teams to work smarter, faster, and more securely. Here's what they say:
@@ -156,7 +156,7 @@ function WhatMakesUsDifferentSection() {
 
 function FeatureSection() {
   return (
-    <section className="relative z-10 px-4 sm:px-6 py-16 sm:py-20 max-w-7xl mx-auto">
+    <section id="features" className="relative z-10 px-4 sm:px-6 py-16 sm:py-20 max-w-7xl mx-auto">
       <div className="text-center mb-8 sm:mb-12">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Experience our features</h2>
         <p className="text-base sm:text-lg text-gray-300 mb-6 sm:mb-8 max-w-2xl mx-auto leading-relaxed">
@@ -257,7 +257,7 @@ function FeatureSection() {
 
 function PricingSection() {
   return (
-    <section className="relative z-10 px-4 sm:px-6 py-16 sm:py-20 max-w-7xl mx-auto">
+    <section id="pricing" className="relative z-10 px-4 sm:px-6 py-16 sm:py-20 max-w-7xl mx-auto">
       <div className="text-center mb-8 sm:mb-10">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Pricing</h2>
       </div>

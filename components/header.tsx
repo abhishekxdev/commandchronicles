@@ -16,6 +16,19 @@ export function Header() {
     return () => document.body.classList.remove("overflow-hidden")
   }, [menuOpen])
 
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId)
+    if (element) {
+      const headerHeight = 80 // Account for fixed header
+      const elementPosition = element.offsetTop - headerHeight
+      window.scrollTo({
+        top: elementPosition,
+        behavior: 'smooth'
+      })
+    }
+    setMenuOpen(false)
+  }
+
   return (
     <header className="relative z-50 px-4 sm:px-6 py-4 sm:py-6">
       <nav className="max-w-7xl mx-auto flex items-center justify-between">
@@ -25,15 +38,24 @@ export function Header() {
         </div>
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
-          <a href="#features" className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base">
+          <button 
+            onClick={() => scrollToSection('features')}
+            className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base cursor-pointer"
+          >
             Features
-          </a>
-          <a href="#pricing" className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base">
+          </button>
+          <button 
+            onClick={() => scrollToSection('testimonials')}
+            className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base cursor-pointer"
+          >
+            Testimonials
+          </button>
+          <button 
+            onClick={() => scrollToSection('pricing')}
+            className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base cursor-pointer"
+          >
             Pricing
-          </a>
-          <a href="#docs" className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base">
-            Docs
-          </a>
+          </button>
           <Button size="sm" className="bg-black text-white text-sm lg:text-base px-3 lg:px-4">
             Sign In
           </Button>
@@ -73,27 +95,24 @@ export function Header() {
           
           {/* Navigation Links - Compact Layout */}
           <div className="px-6 py-6 space-y-4">
-            <a 
-              href="#features" 
-              className="block text-gray-300 hover:text-white text-lg transition-colors font-medium py-2" 
-              onClick={() => setMenuOpen(false)}
+            <button 
+              onClick={() => scrollToSection('features')}
+              className="block text-gray-300 hover:text-white text-lg transition-colors font-medium py-2 w-full text-left"
             >
               Features
-            </a>
-            <a 
-              href="#pricing" 
-              className="block text-gray-300 hover:text-white text-lg transition-colors font-medium py-2" 
-              onClick={() => setMenuOpen(false)}
+            </button>
+            <button 
+              onClick={() => scrollToSection('testimonials')}
+              className="block text-gray-300 hover:text-white text-lg transition-colors font-medium py-2 w-full text-left"
+            >
+              Testimonials
+            </button>
+            <button 
+              onClick={() => scrollToSection('pricing')}
+              className="block text-gray-300 hover:text-white text-lg transition-colors font-medium py-2 w-full text-left"
             >
               Pricing
-            </a>
-            <a 
-              href="#docs" 
-              className="block text-gray-300 hover:text-white text-lg transition-colors font-medium py-2" 
-              onClick={() => setMenuOpen(false)}
-            >
-              Docs
-            </a>
+            </button>
             <Button 
               size="lg" 
               className="bg-black hover:bg-gray-800 text-white w-full text-lg py-3 mt-4" 
