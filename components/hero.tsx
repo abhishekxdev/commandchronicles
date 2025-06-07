@@ -343,12 +343,12 @@ export function Hero() {
           New: Context-Aware CLI History
           </Badge>
 
-     <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 leading-tight text-center">
+    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-6 leading-tight text-center">
   {/* Line 1 - Master Your Terminal History with cursor */}
-  <div className="inline-flex items-center justify-center gap-2">
+  <div className="flex items-center justify-center gap-1 sm:gap-2 whitespace-nowrap">
     <span>Master Your Terminal History</span>
     <svg 
-      className="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 animate-pulse fill-white" 
+      className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 animate-pulse fill-white flex-shrink-0" 
       viewBox="0 0 24 24"
       alt="cursor"
     >
@@ -356,11 +356,10 @@ export function Hero() {
     </svg>
   </div>
   {/* Line 2 - Orange text */}
-  <div className="mt-6 text-orange-500">
+  <div className="mt-4 sm:mt-6 text-orange-500">
     Securely, Seamlessly, Everywhere
   </div>
 </h1>
-
 
 
 
