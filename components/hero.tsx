@@ -71,22 +71,22 @@ function TestimonialSection() {
       
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 sm:gap-8">
         {testimonials.map((testimonial, index) => (
-          <div key={index} className="bg-[#1a1a1a] rounded-xl p-6 border border-gray-800 flex flex-col">
-            <div className="flex items-start mb-4">
+          <div key={index} className="bg-[#1a1a1a] rounded-xl p-8 border border-gray-800 flex flex-col min-h-[280px] w-full max-w-[320px] mx-auto">
+            <div className="flex items-start mb-8">
               <img 
                 src={testimonial.avatar}
                 alt={testimonial.name}
-                className="w-12 h-12 rounded-full object-cover flex-shrink-0"
+                className="w-14 h-14 rounded-full object-cover flex-shrink-0"
               />
             </div>
             
-            <p className="text-gray-300 text-sm leading-relaxed mb-6 flex-grow">
+            <p className="text-gray-300 text-base leading-relaxed mb-8 flex-grow">
               "{testimonial.quote}"
             </p>
             
             <div className="mt-auto">
-              <div className="font-semibold text-white text-sm">{testimonial.name}</div>
-              <div className="text-gray-400 text-xs">{testimonial.company}</div>
+              <div className="font-semibold text-white text-base">{testimonial.name}</div>
+              <div className="text-gray-400 text-sm">{testimonial.company}</div>
             </div>
           </div>
         ))}
