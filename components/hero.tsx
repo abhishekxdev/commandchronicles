@@ -337,7 +337,7 @@ function PricingSection() {
 export function Hero() {
   return (
     <section className="relative z-10 px-4 sm:px-6 py-20 sm:py-24 lg:py-32 mt-16 sm:mt-0">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         <div className="text-center max-w-4xl mx-auto">
           <Badge variant="secondary" className="mb-4 sm:mb-6 bg-orange-900 text-orange-200 border-orange-800 text-sm sm:text-base badge-hover">
           New: Context-Aware CLI History
@@ -358,8 +358,8 @@ export function Hero() {
                 </svg>
               </span>
             </div>
-            {/* Line 2 - Orange text */}
-            <div className="mt-4 sm:mt-6 text-orange-500">
+            {/* Line 2 - White text */}
+            <div className="mt-4 sm:mt-6 text-white">
               Securely, Seamlessly, Everywhere
             </div>
           </h1>
