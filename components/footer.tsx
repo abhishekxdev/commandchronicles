@@ -15,42 +15,86 @@ export function Footer() {
   }
 
   return (
-    <footer className="relative z-10 px-4 sm:px-6 py-10 sm:py-16 bg-[#23231f] text-[#ecebdc]">
-      <div className="max-w-7xl mx-auto flex flex-col items-center text-center gap-6">
-        {/* Logo and Tagline */}
-        <div className="flex flex-col items-center gap-4">
-          <div className="flex items-center space-x-2">
-            <Terminal className="h-6 w-6 sm:h-8 sm:w-8 text-orange-500" />
-            <span className="text-lg sm:text-xl font-bold text-white">CommandChronicles</span>
+    <footer className="relative z-10 px-4 sm:px-6 py-16 sm:py-20 bg-[#23231f] text-[#ecebdc]">
+      <div className="max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+          {/* Left Column - Tagline */}
+          <div className="lg:col-span-1">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white leading-tight">
+              Add a cute <span className="italic font-normal text-gray-300">tagline</span> here
+            </h2>
           </div>
-          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold">
-            Add a spark to your <span className="italic font-normal">workflow</span>
-          </h2>
-          <p className="text-sm sm:text-base lg:text-lg text-[#ecebdc]/80">
-            CommandChronicles: Where every command tells a story.
-          </p>
+
+          {/* Company Column */}
+          <div>
+            <h3 className="text-lg font-semibold text-white mb-6">Company</h3>
+            <div className="space-y-4">
+              <a href="#" className="block text-gray-400 hover:text-white transition-colors text-sm">
+                Changelog
+              </a>
+              <a href="#" className="block text-gray-400 hover:text-white transition-colors text-sm">
+                Resources
+              </a>
+              <a href="#" className="block text-gray-400 hover:text-white transition-colors text-sm">
+                FAQ
+              </a>
+            </div>
+          </div>
+
+          {/* Second Company Column */}
+          <div>
+            <div className="space-y-4 mt-10">
+              <a href="#" className="block text-gray-400 hover:text-white transition-colors text-sm">
+                About
+              </a>
+              <button 
+                onClick={() => scrollToSection('pricing')}
+                className="block text-gray-400 hover:text-white transition-colors text-sm text-left"
+              >
+                Pricing
+              </button>
+              <a href="#" className="block text-gray-400 hover:text-white transition-colors text-sm">
+                Blog
+              </a>
+            </div>
+            
+            {/* We're hiring button */}
+            <div className="mt-6">
+              <button className="inline-flex items-center gap-2 px-4 py-2 bg-orange-500 hover:bg-orange-600 text-white text-sm font-medium rounded-md transition-colors">
+                <span>🔥</span>
+                We're hiring!
+              </button>
+            </div>
+          </div>
+
+          {/* Social Media Column */}
+          <div>
+            <h3 className="text-lg font-semibold text-white mb-6">Social media</h3>
+            <div className="space-y-4">
+              <a href="#" className="block text-gray-400 hover:text-white transition-colors text-sm">
+                Instagram
+              </a>
+              <a href="#" className="block text-gray-400 hover:text-white transition-colors text-sm">
+                Github
+              </a>
+              <a href="#" className="block text-gray-400 hover:text-white transition-colors text-sm">
+                Linkedin
+              </a>
+            </div>
+          </div>
         </div>
 
-        {/* Navigation Buttons */}
-        <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
-          <button 
-            onClick={() => scrollToSection('features')}
-            className="text-[#ecebdc]/90 hover:text-white transition-colors text-sm sm:text-base cursor-pointer hover:underline"
-          >
-            Features
-          </button>
-          <button 
-            onClick={() => scrollToSection('testimonials')}
-            className="text-[#ecebdc]/90 hover:text-white transition-colors text-sm sm:text-base cursor-pointer hover:underline"
-          >
-            Testimonials
-          </button>
-          <button 
-            onClick={() => scrollToSection('pricing')}
-            className="text-[#ecebdc]/90 hover:text-white transition-colors text-sm sm:text-base cursor-pointer hover:underline"
-          >
-            Pricing
-          </button>
+        {/* Bottom section with logo */}
+        <div className="mt-16 pt-8 border-t border-gray-700">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div className="flex items-center space-x-2">
+              <Terminal className="h-6 w-6 text-orange-500" />
+              <span className="text-lg font-bold text-white">CommandChronicles</span>
+            </div>
+            <p className="text-sm text-gray-400">
+              CommandChronicles: Where every command tells a story.
+            </p>
+          </div>
         </div>
       </div>
     </footer>
