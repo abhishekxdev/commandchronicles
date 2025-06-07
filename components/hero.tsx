@@ -344,7 +344,7 @@ export function Hero() {
           </Badge>
 
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight">
-            Master Your Terminal
+            Master Your Terminal History
             <span className="inline-flex items-center ml-2">
               <img 
                 src="https://img.icons8.com/?size=100&id=rKqQiYPTkVLU&format=png&color=000000"
@@ -353,7 +353,7 @@ export function Hero() {
               />
             </span>
             <br />
-            History — <span className="text-orange-500">Securely</span>,{" "}
+            <span className="text-orange-500">Securely</span>,{" "}
             <span className="text-orange-500">Seamlessly</span>, <span className="text-orange-500">Everywhere</span>
           </h1>
 
