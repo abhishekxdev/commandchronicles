@@ -37,20 +37,20 @@ export function Header() {
           <span className="text-lg sm:text-xl font-bold text-white">CommandChronicles</span>
         </div>
         {/* Desktop Nav */}
-        <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
+        <div className="hidden md:flex items-center space-x-8 lg:space-x-12">
           <button 
-            className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base cursor-pointer"
+            className="text-gray-300 hover:text-white transition-all duration-300 text-sm lg:text-base cursor-pointer px-4 py-2 rounded-lg border border-white/20 hover:border-white/40 hover:bg-white/10 backdrop-blur-sm"
           >
             Company
           </button>
           <button 
-            className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base cursor-pointer"
+            className="text-gray-300 hover:text-white transition-all duration-300 text-sm lg:text-base cursor-pointer px-4 py-2 rounded-lg border border-white/20 hover:border-white/40 hover:bg-white/10 backdrop-blur-sm"
           >
             Product
           </button>
           <button 
             onClick={() => scrollToSection('pricing')}
-            className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base cursor-pointer"
+            className="text-gray-300 hover:text-white transition-all duration-300 text-sm lg:text-base cursor-pointer px-4 py-2 rounded-lg border border-white/20 hover:border-white/40 hover:bg-white/10 backdrop-blur-sm"
           >
             Pricing
           </button>
@@ -91,20 +91,20 @@ export function Header() {
           {/* Navigation Links - Compact Layout */}
           <div className="px-6 py-6 space-y-4">
             <button 
-              className="block text-gray-300 hover:text-white text-lg transition-colors font-medium py-2 w-full text-left"
+              className="block text-gray-300 hover:text-white text-lg transition-all duration-300 font-medium py-3 w-full text-left px-4 rounded-lg border border-white/20 hover:border-white/40 hover:bg-white/10 backdrop-blur-sm"
               onClick={() => setMenuOpen(false)}
             >
               Company
             </button>
             <button 
-              className="block text-gray-300 hover:text-white text-lg transition-colors font-medium py-2 w-full text-left"
+              className="block text-gray-300 hover:text-white text-lg transition-all duration-300 font-medium py-3 w-full text-left px-4 rounded-lg border border-white/20 hover:border-white/40 hover:bg-white/10 backdrop-blur-sm"
               onClick={() => setMenuOpen(false)}
             >
               Product
             </button>
             <button 
               onClick={() => scrollToSection('pricing')}
-              className="block text-gray-300 hover:text-white text-lg transition-colors font-medium py-2 w-full text-left"
+              className="block text-gray-300 hover:text-white text-lg transition-all duration-300 font-medium py-3 w-full text-left px-4 rounded-lg border border-white/20 hover:border-white/40 hover:bg-white/10 backdrop-blur-sm"
             >
               Pricing
             </button>
