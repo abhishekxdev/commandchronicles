@@ -344,7 +344,23 @@ export function Hero() {
           </Badge>
 
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight">
-            Master Your Terminal History — <span className="text-orange-500">Securely</span>,{" "}
+            Master Your Terminal History
+            <span className="inline-flex items-center ml-2">
+              <svg 
+                width="1em" 
+                height="1em" 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                stroke="currentColor" 
+                strokeWidth="2" 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                className="text-white animate-pulse"
+              >
+                <path d="M12 2L12 22"/>
+              </svg>
+            </span>{" "}
+            <span className="text-orange-500">Securely</span>,{" "}
             <span className="text-orange-500">Seamlessly</span>, <span className="text-orange-500">Everywhere</span>
           </h1>
 
@@ -353,14 +369,23 @@ export function Hero() {
             like never before — with full context and total control.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-12 sm:mb-16">
-            <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg w-full sm:w-auto">
-              Get Started Free
-              <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
-            </Button>
-            <Button size="lg" className="bg-black text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg w-full sm:w-auto">
-              View Demo
-            </Button>
+          {/* Decorative boxes around buttons */}
+          <div className="relative mb-12 sm:mb-16">
+            {/* Top-left decorative box */}
+            <div className="absolute -top-8 -left-8 w-16 h-16 border-2 border-blue-500/30 rounded-lg hidden lg:block"></div>
+            
+            {/* Bottom-right decorative box */}
+            <div className="absolute -bottom-8 -right-8 w-20 h-20 border-2 border-green-500/30 rounded-lg hidden lg:block"></div>
+            
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
+              <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg w-full sm:w-auto">
+                Get Started Free
+                <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
+              </Button>
+              <Button size="lg" className="bg-black text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg w-full sm:w-auto">
+                View Demo
+              </Button>
+            </div>
           </div>
 
           <TerminalPreview />
