@@ -353,8 +353,7 @@ export function Hero() {
               />
             </span>
             <br />
-            <span className="text-orange-500">Securely</span>,{" "}
-            <span className="text-orange-500">Seamlessly</span>, <span className="text-orange-500">Everywhere</span>
+            <span className="text-orange-500">Securely</span>, <span className="text-orange-500">Seamlessly</span>, <span className="text-orange-500">Everywhere</span>
           </h1>
 
           <p className="text-lg sm:text-xl lg:text-2xl text-gray-300 mb-8 sm:mb-12 leading-relaxed max-w-3xl mx-auto">
