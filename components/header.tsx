@@ -49,12 +49,19 @@ export function Header() {
           </svg>
         </button>
       </nav>
-      {/* Mobile Menu */}
+      {/* Mobile Menu - Full Screen Overlay */}
       {menuOpen && (
-        <div className="fixed inset-0 bg-[#23231f] z-50 flex flex-col">
-          <div className="flex justify-end p-4">
+        <div className="fixed inset-0 top-0 left-0 right-0 bottom-0 bg-[#23231f] z-[100] flex flex-col min-h-screen w-full">
+          {/* Header with Logo and Close Button */}
+          <div className="flex items-center justify-between p-4 sm:p-6 border-b border-gray-700">
+            {/* Logo in Mobile Menu */}
+            <div className="flex items-center space-x-2">
+              <Terminal className="h-6 w-6 sm:h-8 sm:w-8 text-orange-500" />
+              <span className="text-lg sm:text-xl font-bold text-white">CommandChronicles</span>
+            </div>
+            {/* Close Button */}
             <button
-              className="text-white text-2xl p-2 focus:outline-none focus:ring-2 focus:ring-orange-500"
+              className="text-white p-2 focus:outline-none focus:ring-2 focus:ring-orange-500 rounded"
               aria-label="Close menu"
               onClick={() => setMenuOpen(false)}
             >
@@ -63,20 +70,41 @@ export function Header() {
               </svg>
             </button>
           </div>
-          <div className="flex flex-col items-center gap-8 flex-1 justify-center px-6">
-            <a href="#features" className="text-gray-300 hover:text-white text-2xl transition-colors" onClick={() => setMenuOpen(false)}>
+          
+          {/* Navigation Links - Centered */}
+          <div className="flex flex-col items-center justify-center gap-8 flex-1 px-6">
+            <a 
+              href="#features" 
+              className="text-gray-300 hover:text-white text-2xl transition-colors font-medium" 
+              onClick={() => setMenuOpen(false)}
+            >
               Features
             </a>
-            <a href="#pricing" className="text-gray-300 hover:text-white text-2xl transition-colors" onClick={() => setMenuOpen(false)}>
+            <a 
+              href="#pricing" 
+              className="text-gray-300 hover:text-white text-2xl transition-colors font-medium" 
+              onClick={() => setMenuOpen(false)}
+            >
               Pricing
             </a>
-            <a href="#docs" className="text-gray-300 hover:text-white text-2xl transition-colors" onClick={() => setMenuOpen(false)}>
+            <a 
+              href="#docs" 
+              className="text-gray-300 hover:text-white text-2xl transition-colors font-medium" 
+              onClick={() => setMenuOpen(false)}
+            >
               Docs
             </a>
-            <Button size="lg" className="bg-black text-white w-4/5 text-xl py-4" onClick={() => setMenuOpen(false)}>
+            <Button 
+              size="lg" 
+              className="bg-black hover:bg-gray-800 text-white w-4/5 max-w-xs text-xl py-4 mt-4" 
+              onClick={() => setMenuOpen(false)}
+            >
               Sign In
             </Button>
           </div>
+          
+          {/* Footer Space */}
+          <div className="p-4"></div>
         </div>
       )}
     </header>
