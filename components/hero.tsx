@@ -62,76 +62,36 @@ function TestimonialSection() {
       avatar: "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2"
     }
   ]
+
   return (
-    
-
-
-      
-
-
+    <section id="testimonials" className="relative z-10 px-4 sm:px-6 py-16 sm:py-20 max-w-7xl mx-auto">
+      <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-12 sm:mb-16 text-center">
         Don't simply take it from us...
+      </h2>
       
-
-
-      
-      
-
-
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 sm:gap-8">
         {testimonials.map((testimonial, index) => (
-          
-
-
-            {/* Profile Image at Top */}
+          <div key={index} className="bg-[#1a1a1a] rounded-xl p-8 border border-gray-800 flex flex-col min-h-[280px] w-full max-w-[320px] mx-auto">
+            <div className="flex items-start mb-8">
+              <img 
+                src={testimonial.avatar}
+                alt={testimonial.name}
+                className="w-14 h-14 rounded-full object-cover flex-shrink-0"
+              />
+            </div>
             
-
-
-              
+            <p className="text-gray-300 text-base leading-relaxed mb-8 flex-grow">
+              "{testimonial.quote}"
+            </p>
             
-
-
-            
-            {/* Quote Text in Middle */}
-            
-
-
-              
-
-
-                "{testimonial.quote}"
-              
-
-
-            
-
-
-            
-            {/* Name and Company at Bottom */}
-            
-
-
-              
-
-{testimonial.name}
-
-
-              
-
-{testimonial.company}
-
-
-            
-
-
-          
-
-
+            <div className="mt-auto">
+              <div className="font-semibold text-white text-base">{testimonial.name}</div>
+              <div className="text-gray-400 text-sm">{testimonial.company}</div>
+            </div>
+          </div>
         ))}
-      
-
-
-    
-
-
+      </div>
+    </section>
   )
 }
 
