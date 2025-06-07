@@ -343,18 +343,7 @@ export function Hero() {
           New: Context-Aware CLI History
           </Badge>
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight">
-            Master Your Terminal History
-            <span className="inline-flex items-center ml-2">
-              <img 
-                src="https://img.icons8.com/?size=100&id=rKqQiYPTkVLU&format=png&color=000000"
-                alt="cursor"
-                className="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 animate-pulse filter invert"
-              />
-            </span>
-            <br />
-            <span className="text-orange-500">Securely</span>, <span className="text-orange-500">Seamlessly</span>, <span className="text-orange-500">Everywhere</span>
-          </h1>
+          c
 
           <p className="text-lg sm:text-xl lg:text-2xl text-gray-300 mb-8 sm:mb-12 leading-relaxed max-w-3xl mx-auto">
             CommandChronicles is your encrypted, cross-device command log. Search, sync, and understand your CLI history
