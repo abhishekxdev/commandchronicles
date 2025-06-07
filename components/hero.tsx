@@ -69,10 +69,10 @@ function TestimonialSection() {
         Don't simply take it from us...
       </h2>
       
-      {/* Updated grid with better responsive breakpoints and spacing */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
+      {/* Updated grid with wider cards for desktop */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 lg:gap-8">
         {testimonials.map((testimonial, index) => (
-          <div key={index} className="bg-[#1a1a1a] rounded-xl p-6 sm:p-8 border border-gray-800 flex flex-col min-h-[320px] w-full max-w-[320px] mx-auto">
+          <div key={index} className="bg-[#1a1a1a] rounded-xl p-6 sm:p-8 border border-gray-800 flex flex-col min-h-[320px] w-full max-w-[280px] sm:max-w-[320px] lg:max-w-[400px] xl:max-w-[350px] mx-auto">
             <div className="flex items-start mb-6">
               <img 
                 src={testimonial.avatar}
