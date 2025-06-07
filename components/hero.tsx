@@ -348,7 +348,7 @@ export function Hero() {
   <div className="flex items-center justify-center gap-1 sm:gap-2 whitespace-nowrap">
     <span>Master Your Terminal History</span>
     <svg 
-      className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 animate-pulse fill-white flex-shrink-0" 
+      className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 animate-pulse fill-orange-500 stroke-white stroke-1 flex-shrink-0" 
       viewBox="0 0 24 24"
       alt="cursor"
     >
