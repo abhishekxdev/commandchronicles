@@ -110,13 +110,23 @@ function WhatMakesUsDifferentSection() {
               Easily monitor the time spent on tasks with intuitive time tracking, and enhance productivity with real-time tracking and detailed reports.
             </p>
           </div>
-          <div className="bg-background border border-gray-800 rounded-xl p-4 sm:p-6 flex items-center gap-3 shadow-lg">
-            <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" className="text-gray-200 flex-shrink-0"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-            <span className="text-lg sm:text-xl font-bold text-white">Time management</span>
+          <div className="bg-background border border-gray-800 rounded-xl p-4 sm:p-6 flex flex-col gap-3 shadow-lg">
+            <div className="flex items-center gap-3">
+              <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" className="text-gray-200 flex-shrink-0"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              <span className="text-lg sm:text-xl font-bold text-white">Time management</span>
+            </div>
+            <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
+              Track command execution times, analyze productivity patterns, and optimize your workflow with detailed time insights and performance metrics.
+            </p>
           </div>
-          <div className="bg-background border border-gray-800 rounded-xl p-4 sm:p-6 flex items-center gap-3 shadow-lg">
-            <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" className="text-gray-200 flex-shrink-0"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg>
-            <span className="text-lg sm:text-xl font-bold text-white">Cross-functional collaboration</span>
+          <div className="bg-background border border-gray-800 rounded-xl p-4 sm:p-6 flex flex-col gap-3 shadow-lg">
+            <div className="flex items-center gap-3">
+              <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" className="text-gray-200 flex-shrink-0"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg>
+              <span className="text-lg sm:text-xl font-bold text-white">Cross-functional collaboration</span>
+            </div>
+            <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
+              Share command knowledge across teams, enable seamless onboarding, and foster collaboration with shared command libraries and team insights.
+            </p>
           </div>
         </div>
         {/* Right: Mockup */}
