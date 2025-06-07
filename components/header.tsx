@@ -17,7 +17,7 @@ export function Header() {
   }, [menuOpen])
 
   return (
-    <header className="relative z-10 px-4 sm:px-6 py-4 sm:py-6">
+    <header className="relative z-50 px-4 sm:px-6 py-4 sm:py-6 bg-black/80 backdrop-blur-sm">
       <nav className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex items-center space-x-2">
           <Terminal className="h-6 w-6 sm:h-8 sm:w-8 text-orange-500" />
@@ -40,7 +40,7 @@ export function Header() {
         </div>
         {/* Hamburger for mobile */}
         <button
-          className="md:hidden flex items-center justify-center p-2 rounded focus:outline-none focus:ring-2 focus:ring-orange-500"
+          className="md:hidden flex items-center justify-center p-2 rounded focus:outline-none focus:ring-2 focus:ring-orange-500 z-50"
           aria-label="Open menu"
           onClick={() => setMenuOpen((open) => !open)}
         >

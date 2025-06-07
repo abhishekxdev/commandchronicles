@@ -322,7 +322,7 @@ function PricingSection() {
 
 export function Hero() {
   return (
-    <section className="relative z-10 px-4 sm:px-6 py-16 sm:py-20 lg:py-32">
+    <section className="relative z-10 px-4 sm:px-6 py-20 sm:py-24 lg:py-32 mt-16 sm:mt-0">
       <div className="max-w-7xl mx-auto">
         <div className="text-center max-w-5xl mx-auto">
           <Badge variant="secondary" className="mb-4 sm:mb-6 bg-orange-900 text-orange-200 border-orange-800 text-sm sm:text-base">
