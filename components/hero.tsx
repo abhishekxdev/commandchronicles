@@ -6,7 +6,7 @@ import { Terminal } from "lucide-react"
 
 function AboutSection() {
   return (
-    <section className="relative z-10 px-4 sm:px-6 py-12 sm:py-16 max-w-7xl mx-auto text-left">
+    <section className="relative z-10 px-4 sm:px-6 py-12 sm:py-16 max-w-6xl mx-auto text-left">
       <div className="flex flex-col lg:flex-row items-start gap-6 lg:gap-8 mb-8">
         <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg bg-[#232422] flex items-center justify-center flex-shrink-0">
           <Terminal className="h-6 w-6 sm:h-8 sm:w-8 text-orange-500" />
@@ -337,8 +337,8 @@ function PricingSection() {
 export function Hero() {
   return (
     <section className="relative z-10 px-4 sm:px-6 py-20 sm:py-24 lg:py-32 mt-16 sm:mt-0">
-      <div className="max-w-[90vw] mx-auto">
-        <div className="text-center max-w-[85vw] mx-auto">
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center max-w-4xl mx-auto">
           <Badge variant="secondary" className="mb-4 sm:mb-6 bg-orange-900 text-orange-200 border-orange-800 text-sm sm:text-base badge-hover">
           New: Context-Aware CLI History
           </Badge>
@@ -346,36 +346,28 @@ export function Hero() {
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight">
             Master Your Terminal History
             <span className="inline-flex items-center ml-2">
-              <svg 
-                width="1em" 
-                height="1em" 
-                viewBox="0 0 24 24" 
-                fill="none" 
-                stroke="currentColor" 
-                strokeWidth="2" 
-                strokeLinecap="round" 
-                strokeLinejoin="round" 
-                className="text-white animate-pulse"
-              >
-                <path d="M12 2L12 22"/>
-              </svg>
+              <img 
+                src="https://img.icons8.com/?size=100&id=TIHpXsFsrfcf&format=png&color=000000"
+                alt="cursor"
+                className="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 animate-pulse filter invert"
+              />
             </span>{" "}
             <span className="text-orange-500">Securely</span>,{" "}
             <span className="text-orange-500">Seamlessly</span>, <span className="text-orange-500">Everywhere</span>
           </h1>
 
-          <p className="text-lg sm:text-xl lg:text-2xl text-gray-300 mb-8 sm:mb-12 leading-relaxed max-w-[80vw] mx-auto">
+          <p className="text-lg sm:text-xl lg:text-2xl text-gray-300 mb-8 sm:mb-12 leading-relaxed max-w-3xl mx-auto">
             CommandChronicles is your encrypted, cross-device command log. Search, sync, and understand your CLI history
             like never before — with full context and total control.
           </p>
 
           {/* Decorative boxes around buttons */}
           <div className="relative mb-12 sm:mb-16">
-            {/* Top-left decorative box */}
-            <div className="absolute -top-8 -left-8 w-16 h-16 border-2 border-blue-500/30 rounded-lg hidden lg:block"></div>
+            {/* Top-left decorative rectangle */}
+            <div className="absolute -top-8 -left-8 w-24 h-12 border-2 border-blue-500/30 rounded-lg hidden lg:block"></div>
             
-            {/* Bottom-right decorative box */}
-            <div className="absolute -bottom-8 -right-8 w-20 h-20 border-2 border-green-500/30 rounded-lg hidden lg:block"></div>
+            {/* Bottom-right decorative rectangle */}
+            <div className="absolute -bottom-8 -right-8 w-28 h-14 border-2 border-green-500/30 rounded-lg hidden lg:block"></div>
             
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
               <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg w-full sm:w-auto">
