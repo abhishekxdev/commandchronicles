@@ -344,21 +344,22 @@ export function Hero() {
           </Badge>
 
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight text-center">
-  <span className="inline-flex items-center justify-center">
-    Master Your Terminal History
+  <div className="flex items-center justify-center">
+    <span>Master Your Terminal History</span>
     <img 
       src="https://img.icons8.com/?size=100&id=rKqQiYPTkVLU&format=png&color=000000"
       alt="cursor"
       className="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 animate-pulse filter invert ml-2"
     />
-  </span>
-  <br />
-  <span>
+  </div>
+  
+  <div className="mt-2">
     <span className="text-orange-500">Securely</span>, 
     <span className="text-orange-500"> Seamlessly</span>, 
     <span className="text-orange-500"> Everywhere</span>
-  </span>
+  </div>
 </h1>
+
 
 
           <p className="text-lg sm:text-xl lg:text-2xl text-gray-300 mb-8 sm:mb-12 leading-relaxed max-w-3xl mx-auto">
