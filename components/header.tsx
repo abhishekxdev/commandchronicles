@@ -39,16 +39,14 @@ export function Header() {
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
           <button 
-            onClick={() => scrollToSection('features')}
             className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base cursor-pointer"
           >
-            Features
+            Company
           </button>
           <button 
-            onClick={() => scrollToSection('testimonials')}
             className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base cursor-pointer"
           >
-            Testimonials
+            Product
           </button>
           <button 
             onClick={() => scrollToSection('pricing')}
@@ -56,9 +54,6 @@ export function Header() {
           >
             Pricing
           </button>
-          <Button size="sm" className="bg-black text-white text-sm lg:text-base px-3 lg:px-4">
-            Sign In
-          </Button>
         </div>
         {/* Hamburger for mobile */}
         <button
@@ -96,16 +91,16 @@ export function Header() {
           {/* Navigation Links - Compact Layout */}
           <div className="px-6 py-6 space-y-4">
             <button 
-              onClick={() => scrollToSection('features')}
               className="block text-gray-300 hover:text-white text-lg transition-colors font-medium py-2 w-full text-left"
+              onClick={() => setMenuOpen(false)}
             >
-              Features
+              Company
             </button>
             <button 
-              onClick={() => scrollToSection('testimonials')}
               className="block text-gray-300 hover:text-white text-lg transition-colors font-medium py-2 w-full text-left"
+              onClick={() => setMenuOpen(false)}
             >
-              Testimonials
+              Product
             </button>
             <button 
               onClick={() => scrollToSection('pricing')}
@@ -113,13 +108,6 @@ export function Header() {
             >
               Pricing
             </button>
-            <Button 
-              size="lg" 
-              className="bg-black hover:bg-gray-800 text-white w-full text-lg py-3 mt-4" 
-              onClick={() => setMenuOpen(false)}
-            >
-              Sign In
-            </Button>
           </div>
         </div>
       )}
