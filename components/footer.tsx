@@ -21,7 +21,7 @@ export function Footer() {
           {/* Left Column - Tagline */}
           <div className="lg:col-span-1">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white leading-tight">
-              Add a cute <span className="italic font-normal text-gray-300">tagline</span> here
+              Every command <span className="italic font-normal text-gray-300">tells a story</span>
             </h2>
           </div>
 
