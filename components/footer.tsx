@@ -86,19 +86,6 @@ export function Footer() {
             </div>
           </div>
         </div>
-
-        {/* Bottom section with logo */}
-        <div className="mt-16 pt-8 border-t border-gray-700">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-            <div className="flex items-center space-x-2">
-              <Terminal className="h-6 w-6 text-orange-500" />
-              <span className="text-lg font-bold text-white">CommandChronicles</span>
-            </div>
-            <p className="text-sm text-gray-400">
-              CommandChronicles: Where every command tells a story.
-            </p>
-          </div>
-        </div>
       </div>
     </footer>
   )
