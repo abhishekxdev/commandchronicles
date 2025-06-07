@@ -6,7 +6,7 @@ import { Terminal } from "lucide-react"
 
 function AboutSection() {
   return (
-    <section className="relative z-10 px-4 sm:px-6 py-12 sm:py-16 max-w-6xl mx-auto text-left">
+    <section className="relative z-10 px-4 sm:px-6 py-12 sm:py-16 max-w-7xl mx-auto text-left">
       <div className="flex flex-col lg:flex-row items-start gap-6 lg:gap-8 mb-8">
         <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg bg-[#232422] flex items-center justify-center flex-shrink-0">
           <Terminal className="h-6 w-6 sm:h-8 sm:w-8 text-orange-500" />
@@ -337,8 +337,8 @@ function PricingSection() {
 export function Hero() {
   return (
     <section className="relative z-10 px-4 sm:px-6 py-20 sm:py-24 lg:py-32 mt-16 sm:mt-0">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center max-w-5xl mx-auto">
+      <div className="max-w-[90vw] mx-auto">
+        <div className="text-center max-w-[85vw] mx-auto">
           <Badge variant="secondary" className="mb-4 sm:mb-6 bg-orange-900 text-orange-200 border-orange-800 text-sm sm:text-base badge-hover">
           New: Context-Aware CLI History
           </Badge>
@@ -348,7 +348,7 @@ export function Hero() {
             <span className="text-orange-500">Seamlessly</span>, <span className="text-orange-500">Everywhere</span>
           </h1>
 
-          <p className="text-lg sm:text-xl lg:text-2xl text-gray-300 mb-8 sm:mb-12 leading-relaxed max-w-4xl mx-auto">
+          <p className="text-lg sm:text-xl lg:text-2xl text-gray-300 mb-8 sm:mb-12 leading-relaxed max-w-[80vw] mx-auto">
             CommandChronicles is your encrypted, cross-device command log. Search, sync, and understand your CLI history
             like never before — with full context and total control.
           </p>
