@@ -17,7 +17,7 @@ export function Header() {
   }, [menuOpen])
 
   return (
-    <header className="relative z-50 px-4 sm:px-6 py-4 sm:py-6 bg-black/80 backdrop-blur-sm">
+    <header className="relative z-50 px-4 sm:px-6 py-4 sm:py-6">
       <nav className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex items-center space-x-2">
           <Terminal className="h-6 w-6 sm:h-8 sm:w-8 text-orange-500" />
