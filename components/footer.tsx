@@ -41,7 +41,7 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Second Company Column with About, Pricing, Blog */}
+          {/* About Column with Contact us and We're hiring */}
           <div>
             <div className="space-y-4 mt-10">
               <a href="#" className="block text-gray-400 hover:text-white transition-colors text-sm">
@@ -56,13 +56,13 @@ export function Footer() {
               <a href="#" className="block text-gray-400 hover:text-white transition-colors text-sm">
                 Blog
               </a>
-            </div>
-            
-            {/* Contact us section with We're hiring button */}
-            <div className="mt-8">
-              <a href="#" className="block text-gray-400 hover:text-white transition-colors text-sm mb-4">
+              <a href="#" className="block text-gray-400 hover:text-white transition-colors text-sm">
                 Contact us
               </a>
+            </div>
+            
+            {/* We're hiring button positioned right after Contact us */}
+            <div className="mt-4">
               <button className="inline-flex items-center gap-2 px-4 py-2 bg-orange-500 hover:bg-orange-600 text-white text-sm font-medium rounded-md transition-colors">
                 <span>🔥</span>
                 We're hiring!
