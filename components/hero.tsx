@@ -38,66 +38,73 @@ function AboutSection() {
 function TestimonialSection() {
   const testimonials = [
     {
-      quote: "Easily monitor and manage the time spent on tasks and projects with NimbusFlow's intuitive time tracking. Gain insights",
+      quote:
+        "Easily monitor and manage the time spent on tasks and projects with NimbusFlow's intuitive time tracking. Gain insights",
       name: "Name",
       company: "Company",
-      avatar: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2"
+      avatar:
+        "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2",
     },
     {
-      quote: "Easily monitor and manage the time spent on tasks and projects with NimbusFlow's intuitive time tracking. Gain insights",
-      name: "Name", 
-      company: "Company",
-      avatar: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2"
-    },
-    {
-      quote: "Easily monitor and manage the time spent on tasks and projects with NimbusFlow's intuitive time tracking. Gain insights",
-      name: "Name",
-      company: "Company", 
-      avatar: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2"
-    },
-    {
-      quote: "Easily monitor and manage the time spent on tasks and projects with NimbusFlow's intuitive time tracking. Gain insights",
+      quote:
+        "Easily monitor and manage the time spent on tasks and projects with NimbusFlow's intuitive time tracking. Gain insights",
       name: "Name",
       company: "Company",
-      avatar: "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2"
-    }
-  ]
+      avatar:
+        "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2",
+    },
+    {
+      quote:
+        "Easily monitor and manage the time spent on tasks and projects with NimbusFlow's intuitive time tracking. Gain insights",
+      name: "Name",
+      company: "Company",
+      avatar:
+        "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2",
+    },
+    {
+      quote:
+        "Easily monitor and manage the time spent on tasks and projects with NimbusFlow's intuitive time tracking. Gain insights",
+      name: "Name",
+      company: "Company",
+      avatar:
+        "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2",
+    },
+  ];
 
   return (
-    <section id="testimonials" className="relative z-10 px-4 sm:px-6 py-16 sm:py-20 max-w-7xl mx-auto">
-      <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-12 sm:mb-16 text-center">
-        Don't simply take it from us...
+    <section className="bg-black py-12 px-4">
+      <h2 className="text-white text-center text-2xl font-semibold mb-8">
+        Don’t simply take it from us...
       </h2>
-      
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 sm:gap-8">
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
         {testimonials.map((testimonial, index) => (
-          <div key={index} className="bg-[#2a2a2a] rounded-xl p-6 border border-gray-700 flex flex-col justify-between min-h-[320px] w-full max-w-[280px] mx-auto">
-            {/* Profile Image at Top */}
-            <div className="flex justify-start mb-6">
-              <img 
-                src={testimonial.avatar}
-                alt={testimonial.name}
-                className="w-16 h-16 rounded-full object-cover"
-              />
-            </div>
-            
-            {/* Quote Text in Middle */}
-            <div className="flex-grow flex items-center">
-              <p className="text-gray-300 text-sm leading-relaxed">
-                "{testimonial.quote}"
-              </p>
-            </div>
-            
-            {/* Name and Company at Bottom */}
-            <div className="mt-6 text-right">
-              <div className="font-semibold text-white text-sm">{testimonial.name}</div>
-              <div className="text-gray-400 text-xs">{testimonial.company}</div>
+          <div
+            key={index}
+            className="bg-[#1a1a1a] rounded-xl p-6 text-center flex flex-col items-center justify-between shadow-md min-h-[320px]"
+          >
+            {/* Profile Image */}
+            <img
+              src={testimonial.avatar}
+              alt={testimonial.name}
+              className="w-20 h-20 rounded-full object-cover mb-6"
+            />
+
+            {/* Quote */}
+            <p className="text-gray-300 text-sm mb-6 leading-relaxed">
+              “{testimonial.quote}”
+            </p>
+
+            {/* Name & Company */}
+            <div>
+              <p className="text-white font-semibold">{testimonial.name}</p>
+              <p className="text-gray-400 text-sm">{testimonial.company}</p>
             </div>
           </div>
         ))}
       </div>
     </section>
-  )
+  );
 }
 
 function WhatMakesUsDifferentSection() {
