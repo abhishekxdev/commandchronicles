@@ -450,7 +450,7 @@ function PricingSection() {
 export function Hero() {
   return (
     <section className="relative z-10 px-4 sm:px-6 py-20 sm:py-24 lg:py-32 mt-16 sm:mt-0">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-[1400px] mx-auto">
         <div className="text-center max-w-4xl mx-auto">
           <Badge variant="secondary" className="mb-4 sm:mb-6 bg-orange-900 text-orange-200 border-orange-800 text-sm sm:text-base badge-hover">
           New: Context-Aware CLI History
@@ -465,7 +465,6 @@ export function Hero() {
                 <svg 
                   className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 animate-pulse fill-orange-500 stroke-white stroke-1 flex-shrink-0" 
                   viewBox="0 0 24 24"
-                  alt="cursor"
                 >
                   <path d="M13.64,21.97C13.14,22.21 12.54,22 12.31,21.5L10.13,16.76L7.62,18.78C7.45,18.92 7.24,19 7,19A1,1 0 0,1 6,18V3A1,1 0 0,1 7,2C7.24,2 7.47,2.09 7.64,2.23L7.65,2.22L19.14,11.86C19.57,12.22 19.62,12.85 19.27,13.27C19.12,13.45 18.91,13.57 18.7,13.61L15.54,14.23L17.74,18.96C18,19.46 17.76,20.05 17.26,20.28L13.64,21.97Z"/>
                 </svg>
@@ -500,8 +499,13 @@ export function Hero() {
               </Button>
             </div>
           </div>
+        </div>
 
+        <div className="max-w-[1200px] mx-auto">
           <TerminalPreview />
+        </div>
+
+        <div className="px-4 sm:px-6">
           <AboutSection />
           <TestimonialSection />
           <WhatMakesUsDifferentSection />
