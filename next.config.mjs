@@ -14,6 +14,11 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  // Fix for static export
+  distDir: 'out',
+  // Ensure proper asset handling
+  assetPrefix: '',
+  // Fix for deployment
   async headers() {
     return [
       {
