@@ -64,7 +64,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
   }
 }
 
@@ -124,14 +124,105 @@ html {
   /* Add blur effect to grid */
   backdrop-filter: blur(0.5px);
   -webkit-backdrop-filter: blur(0.5px);
+  /* Add fade out effect at bottom */
+  mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+}
+
+/* Terminal content fade effect */
+.terminal-content-fade {
+  position: relative;
+  overflow: hidden;
+}
+
+.terminal-content-fade::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(17, 24, 39, 0.1) 20%,
+    rgba(17, 24, 39, 0.2) 40%,
+    rgba(17, 24, 39, 0.4) 60%,
+    rgba(17, 24, 39, 0.6) 80%,
+    rgba(17, 24, 39, 0.8) 90%,
+    rgb(17, 24, 39) 100%
+  );
+  pointer-events: none;
+  z-index: 1;
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(0, 0, 0, 0.2) 20%,
+    rgba(0, 0, 0, 0.4) 40%,
+    rgba(0, 0, 0, 0.6) 60%,
+    rgba(0, 0, 0, 0.8) 80%,
+    black 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(0, 0, 0, 0.2) 20%,
+    rgba(0, 0, 0, 0.4) 40%,
+    rgba(0, 0, 0, 0.6) 60%,
+    rgba(0, 0, 0, 0.8) 80%,
+    black 100%
+  );
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+}
+
+.terminal-content-fade::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(17, 24, 39, 0.1) 20%,
+    rgba(17, 24, 39, 0.2) 40%,
+    rgba(17, 24, 39, 0.4) 60%,
+    rgba(17, 24, 39, 0.6) 80%,
+    rgba(17, 24, 39, 0.8) 90%,
+    rgb(17, 24, 39) 100%
+  );
+  pointer-events: none;
+  z-index: 1;
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(0, 0, 0, 0.2) 20%,
+    rgba(0, 0, 0, 0.4) 40%,
+    rgba(0, 0, 0, 0.6) 60%,
+    rgba(0, 0, 0, 0.8) 80%,
+    black 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(0, 0, 0, 0.2) 20%,
+    rgba(0, 0, 0, 0.4) 40%,
+    rgba(0, 0, 0, 0.6) 60%,
+    rgba(0, 0, 0, 0.8) 80%,
+    black 100%
+  );
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border-bottom: 1px solid rgba(75, 85, 99, 0.2);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
 }
 
 /* Terminal blue glow effect with blur */
 .terminal-glow {
   position: relative;
-  /* Add blur effect to terminal */
-  filter: blur(0.3px);
-  -webkit-filter: blur(0.3px);
 }
 
 .terminal-glow::after {
