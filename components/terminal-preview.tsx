@@ -1,6 +1,6 @@
 export function TerminalPreview() {
   return (
-    <div className="relative max-w-5xl mx-auto terminal-glow">
+    <div className="relative w-full max-w-none mx-auto terminal-glow" style={{ width: '70%' }}>
       <div className="bg-gray-900 rounded-lg shadow-2xl overflow-hidden">
         <div className="flex items-center px-3 sm:px-4 py-2 sm:py-3 bg-gray-800">
           <div className="flex space-x-1.5 sm:space-x-2">
