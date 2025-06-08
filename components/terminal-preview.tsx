@@ -1,8 +1,8 @@
 export function TerminalPreview() {
   return (
-    <div className="relative w-full mx-auto terminal-glow" style={{ width: '90%', maxWidth: 'none' }}>
-      <div className="bg-gray-900 rounded-lg shadow-2xl overflow-hidden">
-        <div className="flex items-center px-3 sm:px-4 py-2 sm:py-3 bg-gray-800">
+    <div className="relative w-full mx-auto px-4 sm:px-6" style={{ width: '100%', maxWidth: 'none' }}>
+      <div className="bg-gray-900 rounded-lg shadow-2xl overflow-hidden min-h-[400px]">
+        <div className="flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-gray-800">
           <div className="flex space-x-1.5 sm:space-x-2">
             <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 bg-red-500 rounded-full"></div>
             <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 bg-yellow-500 rounded-full"></div>
@@ -12,19 +12,27 @@ export function TerminalPreview() {
             <span className="text-gray-400 text-xs sm:text-sm">CommandChronicles Terminal</span>
           </div>
         </div>
-        <div className="p-3 sm:p-4 lg:p-6 font-mono text-xs sm:text-sm overflow-x-auto">
-          <div className="text-green-400 mb-2">$ cc search "docker build"</div>
-          <div className="text-gray-300 mb-3 sm:mb-4">
-            <div className="mb-2 text-xs sm:text-sm">📁 /home/projects/webapp • 2 hours ago</div>
-            <div className="text-orange-400 break-all">docker build -t myapp:latest .</div>
-            <div className="text-gray-500 text-xs">✓ Exit code: 0 • Duration: 45.2s</div>
+        <div className="relative">
+          <div className="p-6 sm:p-8 lg:p-10 font-mono text-xs sm:text-sm overflow-x-auto space-y-6 text-center">
+            <div className="text-green-400 mb-2">$ cc search "docker build"</div>
+            <div className="text-gray-300 mb-4 sm:mb-6">
+              <div className="mb-3 text-xs sm:text-sm">📁 /home/projects/webapp • 2 hours ago</div>
+              <div className="text-orange-400 break-all">docker build -t myapp:latest .</div>
+              <div className="text-gray-500 text-xs mt-2">✓ Exit code: 0 • Duration: 45.2s</div>
+            </div>
+            <div className="text-gray-300 mb-4 sm:mb-6">
+              <div className="mb-3 text-xs sm:text-sm">📁 /home/projects/api • 1 day ago</div>
+              <div className="text-orange-400 break-all">docker build --no-cache -f Dockerfile.prod .</div>
+              <div className="text-gray-500 text-xs mt-2">✓ Exit code: 0 • Duration: 2m 15s</div>
+            </div>
+            <div className="text-gray-300 mb-4 sm:mb-6">
+              <div className="mb-3 text-xs sm:text-sm">📁 /home/projects/microservices • 3 days ago</div>
+              <div className="text-orange-400 break-all">docker build --platform linux/amd64 -t api-service:v1 .</div>
+              <div className="text-gray-500 text-xs mt-2">✓ Exit code: 0 • Duration: 1m 45s</div>
+            </div>
+            <div className="text-green-400">$ _</div>
           </div>
-          <div className="text-gray-300 mb-3 sm:mb-4">
-            <div className="mb-2 text-xs sm:text-sm">📁 /home/projects/api • 1 day ago</div>
-            <div className="text-orange-400 break-all">docker build --no-cache -f Dockerfile.prod .</div>
-            <div className="text-gray-500 text-xs">✓ Exit code: 0 • Duration: 2m 15s</div>
-          </div>
-          <div className="text-green-400">$ _</div>
+          <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-gray-900 to-transparent pointer-events-none"></div>
         </div>
       </div>
     </div>
