@@ -12,7 +12,7 @@ export function TerminalPreview() {
             <span className="text-gray-400 text-xs sm:text-sm">CommandChronicles Terminal</span>
           </div>
         </div>
-        <div className="relative">
+        <div className="relative terminal-content-fade">
           <div className="p-6 sm:p-8 lg:p-10 font-mono text-xs sm:text-sm overflow-x-auto space-y-6 text-center">
             <div className="text-green-400 mb-2">$ cc search "docker build"</div>
             <div className="text-gray-300 mb-4 sm:mb-6">
@@ -32,7 +32,6 @@ export function TerminalPreview() {
             </div>
             <div className="text-green-400">$ _</div>
           </div>
-          <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-gray-900 to-transparent pointer-events-none"></div>
         </div>
       </div>
     </div>
